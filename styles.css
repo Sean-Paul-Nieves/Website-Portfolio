@@ -220,7 +220,10 @@ section h2 {
 /* ---------- Certifications ---------- */
 .cert-cat {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 10rem), 1fr)
+  );
   gap: 1.5rem;
   align-items: stretch;
 }
@@ -238,6 +241,8 @@ section h2 {
   border-radius: 0.75rem;
   background-color: rgba(255, 255, 255, 0.04);
   transition: border-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  min-width: 0;
 }
 
 .cert-item:hover {
@@ -270,6 +275,10 @@ section h2 {
   min-height: 2rem;
   margin: 0 0 0.5rem;
   font-size: 0.875rem;
+}
+
+.cert-item h3, h4 {
+  overflow-wrap:anywhere;
 }
 
 .cert-item a {
