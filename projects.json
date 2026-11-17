@@ -1,0 +1,37 @@
+[
+    {
+        "title": "System Override: 3D Game-Based Learning Tool",
+        "description":"A 3D game-based learning tool designed to introduce programming fundamentals to beginners in Python. It teaches core concepts through interactive gameplay, combining education and entertainment to support learning without overwhelming students.",
+        "tag":"3D GAME · 2026",
+        "techstack":["UNITY "," C# ", " AUTODESK MAYA ", " PYTHON "],
+        "link":"https://github.com/Sean-Paul-Nieves/System-Override"
+    },
+    {
+        "title": "Bound to Oblivion",
+        "description":"A C# action-adventure game developed with MonoGame. Players take on the role of a samurai trapped in the realm of Oblivion, where they must defeat every enemy to unlock the portal to freedom. As they progress, the realm grows increasingly powerful.",
+        "tag":"2D GAME · 2025",
+        "techstack":[" C# ", " MONOGAME ", ".NET"],
+        "link":"https://github.com/Sean-Paul-Nieves/Bound-to-Oblivion"
+    },
+    {
+        "title": "Contrak",
+        "description":"Contrak is a 3D, Contra-inspired action game developed as a final project for Game Design 2. Built in Unity, the game features 3D assets created in Autodesk Maya. Players control a soldier who battles through enemy forces to reach and defeat the final boss.",
+        "tag":"3G GAME · 2026",
+        "techstack":[" UNITY "," C# ", " AUTODESK MAYA "],
+        "link":"https://github.com/Sean-Paul-Nieves/Contrak"
+    },
+        {
+        "title": "ToreVote: Election Voting Platform",
+        "description":"A web-based election system developed with PHP and MySQL for school, organizational, and local elections. It enables authenticated users to vote for candidates across multiple positions, while administrators manage voter and candidate records and review election results through a dashboard. Developed as a final project.",
+        "tag":"WEBSITE · 2025",
+        "techstack":[" HTML ", " CSS ", " JAVASCRIPT ", " PHP" , " BOOTSTRAP ", " PHPMYADMIN "],
+        "link":"https://github.com/Sean-Paul-Nieves/Student-Election-Voting-System"
+    },
+        {
+        "title": "MAIDS: Medical Assistance and Information Dissemination System",
+        "description":"A desktop-based appointment and information management system designed for small clinics and service centers. Users can book, view, and manage appointments, while administrators oversee client records and schedules. Developed as a final project for an Object-Oriented Programming course.",
+        "tag":"SOFTWARE · 2025",
+        "techstack":[" JAVA "," MYSQL ", " JFRAME "],
+        "link":"https://github.com/Sean-Paul-Nieves/MAID-SYSTEM"
+    }
+]

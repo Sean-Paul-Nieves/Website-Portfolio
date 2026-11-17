@@ -12,7 +12,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg);
-  color: var(--text);
+  --color: rgba(114, 114, 114, 0.05);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+  linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
 }
 
 /* ---------- Header ---------- */
@@ -58,15 +62,19 @@ main {
   margin: 0 auto;
 }
 
+main hr {
+  border: 3px solid;
+}
+
 .hero {
   margin-top: 3.75rem; /* mt-15 */
 }
 
 .hero h1 {
-  font-size: 3rem; /* text-6xl */
+  font-size: 4rem; /* text-6xl */
   text-align: left;
   font-weight: bold;
-  max-width: 32rem; /* max-w-4xl */
+  max-width: 50rem; /* max-w-4xl */
   margin-bottom: 1rem; /* mb-4 */
 }
 
@@ -136,4 +144,56 @@ main {
 .btn-secondary:hover {
   background-color: white;
   color: var(--accent);
+}
+
+/* ---------- Sections ---------- */
+section h2 {
+  font-size: 1.5rem; /* text-4xl */
+  font-weight: bold;
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- Projects ---------- */
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects h5 {
+  opacity: 0.5;
+}
+
+.projects p {
+  max-width: 95%;
+  text-align: justify;
+}
+
+.projects-container {
+  margin-left: 7em;
+}
+
+.projects-container .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-container a {
+  margin-top: 1em;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.5;
+}
+
+.projects-container a:hover {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.projects-container hr {
+  border: 1px solid;
 }

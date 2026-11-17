@@ -18,3 +18,45 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+async function displayProjects() {
+  const response = await fetch('./projects.json');
+  const projects = await response.json();
+  const container = document.querySelector("#projects-container");
+
+  projects.forEach((project) => {
+    const card = document.createElement("article");
+
+    const header = document.createElement("div");
+    header.className = "header";
+
+    const tag = document.createElement("h5");
+    tag.textContent = `${project.tag}`;
+
+    const cta = document.createElement("a");
+    cta.textContent = 'View Project →';
+    cta.href = `${project.link}`;
+    cta.target = "_blank";
+
+    header.append(tag, cta);
+
+    const title = document.createElement("h2");
+    title.textContent = project.title;
+
+    const description = document.createElement("p");
+    description.textContent = project.description;
+
+    const techstack = document.createElement("h5");
+    techstack.textContent = `${project.techstack}`;
+
+    card.append(header, title, description, techstack);
+
+    const divider = document.createElement("hr");
+
+    card.append(divider);
+
+    container.append(card);
+  });
+}
+
+displayProjects();
