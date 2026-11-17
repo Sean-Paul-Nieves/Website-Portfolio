@@ -1,0 +1,26 @@
+[
+    {
+        "title": "IT Specialist - Python",
+        "date":"Feb 2025",
+        "publicURL":"https://www.credly.com/badges/2a01adad-5a3b-49e0-860e-8c6e378c809b/linked_in_profile",
+        "imgPath": "../certificates-badges/IT Specialist - Python.png"
+    },
+    {
+        "title": "Cisco Certified Support Technician Networking (CCST Networking) - Lifetime",
+        "date":"Feb 2025",
+        "publicURL":"https://www.credly.com/badges/de60992f-eebc-43a5-8348-0efcfd884075/linked_in_profile",
+        "imgPath": "../certificates-badges/Cisco Certified Support Technician Networking (CCST Networking) - Lifetime.webp"
+    },
+    {
+        "title": "Career Essentials in GitHub Professional Certificate",
+        "date":"Sep 2026",
+        "publicURL":"https://www.linkedin.com/learning/certificates/ae73e644b6d0a5433f17342c827acbb5c4ede58e9d0bd7d618e01f972cc2085e?u=254231458",
+        "imgPath": "../certificates-badges/Career Essentials in GitHub Professional Certificate.png"
+    },
+    {
+        "title": "PMI Project Management Ready™",
+        "date":"Mar 2026 - Mar 2031",
+        "publicURL":"https://www.credly.com/badges/4237d0d8-176e-4991-ba26-b79d7e444b73/linked_in_profile",
+        "imgPath": "../certificates-badges/PMI Project Management Ready.png"
+    }
+]

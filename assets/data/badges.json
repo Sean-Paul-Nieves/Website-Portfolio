@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Introduction to Cybersecurity",
+        "date":"Oct 2026",
+        "publicURL":"https://www.credly.com/badges/6352b99d-7a52-4199-86b2-54b2c78293c7/linked_in_profile",
+        "imgPath": "../certificates-badges/Introduction to Cybersecurity.png"
+    },
+    {
+        "title": "Linux Essentials",
+        "date":"Nov 2025",
+        "publicURL":"https://www.credly.com/badges/64c84700-7fd0-445f-8fa1-eec937a06369/linked_in_profile",
+        "imgPath": "../certificates-badges/Linux Essentials.png"
+    },
+    {
+        "title": "CCNA: Switching, Routing, and Wireless Essentials",
+        "date":"Mar 2025",
+        "publicURL":"https://www.credly.com/badges/519b3a10-826d-47e5-85be-00b4cc7e1f3b/linked_in_profile",
+        "imgPath": "../certificates-badges/CCNA Switching, Routing, and Wireless Essentials.png"
+    },
+    {
+        "title": "CCNA: Introduction to Networks",
+        "date":"Dec 2024",
+        "publicURL":"https://www.credly.com/badges/6ebab377-f829-476d-bdad-9920decd72c7/linked_in_profile",
+        "imgPath": "../certificates-badges/CCNA Introduction to Networks.png"
+    }
+]

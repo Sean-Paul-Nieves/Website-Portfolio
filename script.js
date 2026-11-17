@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 async function displayProjects() {
-  const response = await fetch('./projects.json');
+  const response = await fetch('./assets/data/projects.json');
   const projects = await response.json();
   const container = document.querySelector("#projects-container");
 
@@ -59,4 +59,51 @@ async function displayProjects() {
   });
 }
 
+async function displayCredentials(jsonPath, containerSelector, itemClass) {
+  const response = await fetch(jsonPath);
+  const certificates = await response.json();
+  const container = document.querySelector(containerSelector);
+
+  if (!container) return;
+
+  certificates.forEach((certificate) => {
+    const certItem = document.createElement("article");
+    certItem.className = itemClass;
+
+    const image = document.createElement("img");
+    image.src = new URL(certificate.imgPath, response.url).href;
+    image.alt = `${certificate.title} badge`;
+
+    const title = document.createElement("h3");
+    title.textContent = certificate.title;
+
+    const date = document.createElement("h4");
+    date.textContent = `Issued: ${certificate.date}`;
+
+    const cta = document.createElement("a");
+    cta.textContent = "Verify →";
+    cta.href = certificate.publicURL;
+    cta.target = "_blank";
+    cta.rel = "noopener noreferrer";
+
+    certItem.append(image, title, date, cta);
+    container.append(certItem);
+  });
+}
+
 displayProjects();
+displayCredentials("./assets/data/certificates.json", ".cert-cat", "cert-item");
+displayCredentials("./assets/data/badges.json", ".badge-cat", "badge-item");
+
+const email = document.querySelector("#email-to-copy");
+const copyButton = document.querySelector("#copy-email");
+
+copyButton.addEventListener("click", async () => {
+  await navigator.clipboard.writeText(email.textContent.trim());
+
+  copyButton.textContent = "COPIED!";
+  setTimeout(() => {
+    copyButton.textContent = "COPY";
+  }, 1500);
+});
+
