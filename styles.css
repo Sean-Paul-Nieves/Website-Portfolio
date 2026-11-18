@@ -404,6 +404,14 @@ section h2 {
   background-color:#DE0046;
 }
 
+.contact span {
+  color:black;
+}
+
+.contact button {
+  color: rgb(220, 220, 220);
+}
+
 /* ---------- Footer ---------- */
 footer {
   box-sizing: border-box;
